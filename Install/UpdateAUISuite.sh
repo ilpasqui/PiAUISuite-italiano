@@ -7,7 +7,7 @@ if [ "$(id -u)" != "0" ]; then
 fi
 
 #I should first try to update the Update script
-wget https://raw.github.com/StevenHickson/PiAUISuite/master/Install/UpdateAUISuite.sh
+wget https://raw.github.com/ilpasqui/PiAUISuite-italiano/master/Install/UpdateAUISuite.sh
 difference=`diff UpdateAUISuite.sh UpdateAUISuite.sh.1`
 
 if [ -n "$difference" ] ; then
@@ -23,51 +23,51 @@ fi
 
 if [ -e "/usr/bin/playvideo" ] ; then
     echo "Updating playvideo ..."
-    wget -N -P /usr/bin/ https://raw.github.com/StevenHickson/PiAUISuite/master/PlayVideoScripts/playvideo
+    wget -N -P /usr/bin/ https://raw.github.com/ilpasqui/PiAUISuite-italiano/master/PlayVideoScripts/playvideo
     chmod +x /usr/bin/playvideo
-    wget -N -P /usr/share/man/man8/ https://raw.github.com/StevenHickson/PiAUISuite/master/PlayVideoScripts/playvideo.8.gz
+    wget -N -P /usr/share/man/man8/ https://raw.github.com/ilpasqui/PiAUISuite-italiano/master/PlayVideoScripts/playvideo.8.gz
 fi
 
 if [ -e "/usr/bin/download" ] ; then
     echo "Updating download ..."
-    wget -N -P /usr/bin/ https://raw.github.com/StevenHickson/PiAUISuite/master/DownloadController/download
+    wget -N -P /usr/bin/ https://raw.github.com/ilpasqui/PiAUISuite-italiano/master/DownloadController/download
     chmod +x /usr/bin/download
 fi
 
 if [ -e "/usr/bin/gtextcommand" ] ; then
     echo "Updating gtextcommand ..."
-    wget -N -P /usr/bin/ https://raw.github.com/StevenHickson/PiAUISuite/master/TextCommand/gtextcommand
+    wget -N -P /usr/bin/ https://raw.github.com/ilpasqui/PiAUISuite-italiano/master/TextCommand/gtextcommand
     chmod +x /usr/bin/gtextcommand
 fi
 
 if [ -e "/usr/bin/gvapi" ] ; then
     echo "Updating gvapi ..."
-    wget -N -P /usr/bin/ https://raw.github.com/StevenHickson/PiAUISuite/master/TextCommand/gvapi
+    wget -N -P /usr/bin/ https://raw.github.com/ilpasqui/PiAUISuite-italiano/master/TextCommand/gvapi
     chmod +x /usr/bin/gvapi
-    wget -N -P /usr/share/man/man8/ https://raw.github.com/StevenHickson/PiAUISuite/master/TextCommand/gvapi.8.gz
+    wget -N -P /usr/share/man/man8/ https://raw.github.com/ilpasqui/PiAUISuite-italiano/master/TextCommand/gvapi.8.gz
 fi
 
 if [ -e "/usr/bin/youtube" ] ; then
     echo "Updating youtube ..."
-    wget -N -P /usr/bin/ https://raw.github.com/StevenHickson/PiAUISuite/master/Youtube/youtube
+    wget -N -P /usr/bin/ https://raw.github.com/ilpasqui/PiAUISuite-italiano/master/Youtube/youtube
     chmod +x /usr/bin/youtube
-    wget -N -P /usr/bin/ https://raw.github.com/StevenHickson/PiAUISuite/master/Youtube/youtube-dlfast
+    wget -N -P /usr/bin/ https://raw.github.com/ilpasqui/PiAUISuite-italiano/master/Youtube/youtube-dlfast
     chmod +x /usr/bin/youtube-dlfast
-    wget -N -P /usr/bin/ https://raw.github.com/StevenHickson/PiAUISuite/master/Youtube/youtube-search
+    wget -N -P /usr/bin/ https://raw.github.com/ilpasqui/PiAUISuite-italiano/master/Youtube/youtube-search
     chmod +x /usr/bin/youtube-search
 fi
 
 if [ -e "/usr/bin/voicecommand" ] ; then
     echo "Updating voicecommand ..."
-    wget -N -P /usr/bin/ https://raw.github.com/StevenHickson/PiAUISuite/master/VoiceCommand/voicecommand
+    wget -N -P /usr/bin/ https://raw.github.com/ilpasqui/PiAUISuite-italiano/master/VoiceCommand/voicecommand
     chmod +x /usr/bin/voicecommand
-    wget -N -P /usr/bin/ https://raw.github.com/StevenHickson/PiAUISuite/master/VoiceCommand/google
+    wget -N -P /usr/bin/ https://raw.github.com/ilpasqui/PiAUISuite-italiano/master/VoiceCommand/google
     chmod +x /usr/bin/google
-    wget -N -P /usr/bin/ https://raw.github.com/StevenHickson/PiAUISuite/master/VoiceCommand/tts
+    wget -N -P /usr/bin/ https://raw.github.com/ilpasqui/PiAUISuite-italiano/master/VoiceCommand/tts
     chmod +x /usr/bin/tts
-    wget -N -P /usr/bin/ https://raw.github.com/StevenHickson/PiAUISuite/master/VoiceCommand/tts-nofill
+    wget -N -P /usr/bin/ https://raw.github.com/ilpasqui/PiAUISuite-italiano/master/VoiceCommand/tts-nofill
     chmod +x /usr/bin/tts-nofill
-    wget -N -P /usr/bin/ https://raw.github.com/StevenHickson/PiAUISuite/master/VoiceCommand/speech-recog.sh
+    wget -N -P /usr/bin/ https://raw.github.com/ilpasqui/PiAUISuite-italiano/master/VoiceCommand/speech-recog.sh
     chmod +x /usr/bin/speech-recog.sh
-    wget -N -P /usr/share/man/man8/ https://raw.github.com/StevenHickson/PiAUISuite/master/VoiceCommand/voicecommand.8.gz
+    wget -N -P /usr/share/man/man8/ https://raw.github.com/ilpasqui/PiAUISuite-italiano/master/VoiceCommand/voicecommand.8.gz
 fi
