@@ -1,4 +1,9 @@
-VERSIONE IN ITALIANO (WORK IN PROGRESS) - Credits to Steven Hickson
+<h4>VERSIONE IN ITALIANO (WORK IN PROGRESS) - Credits to Steven Hickson</h4>
+<h1>
+Raspberry PI - controllo vocale (con google speech API)
+</h1>
+Permette di controllare tramite comandi vocali il Raspberry PI, utilizza il motore google speech in italiano
+
 
 Alternative User Interface
 Includes voicecommand, download, playvideo, and textcommand scripts
